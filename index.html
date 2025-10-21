@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-	<title>Free Online Photoshop | FreePS</title>
+	<title>免费在线PS工具 | 网页版图片编辑器 | 在线抠图修图神器</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
-	<meta name="description" content="Online image editor, an open-source online image editor developed using HTML5+Vue technology, features functions such as image editing, brushes, filters, resizing, text, zooming, layers, and screenshots. This editor mimics most of the functions of Photoshop..." />
+	<meta name="description" content="免费在线PS工具，无需下载即可使用！强大如Photoshop，支持图片编辑、抠图、修图、加字、滤镜、拼图等功能。适合新手和设计师在线处理图片、制作海报、修改素材。打开网页即可用，无广告、极速加载，完美替代PS软件。" />
 	<meta name="keywords"
-		content="Photo, Photopea, Image, Picture, Transparent, Layer, Free, Edit, html5, Canvas, javascript, online, photoshop, gimp, Effects, Sharpen, Blur, Magic Eraser Tool, Clone Tool, Rotate, Resize, photoshop- Online, Online Tools, Tilt Offset, Sprite, Key point" />
+		content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, user-scalable=yes" />
 	<link rel="icon" sizes="192x192" href="images/favicon.png">
 	<!-- <link rel="manifest" href="dist/manifest.json"> -->
 	<!-- Google -->
 
 	<link rel="canonical" href="https://freeps.org">
-	<meta itemprop="name" content="Online Photoshop Free Tool" />
-	<meta itemprop="description" content="Online Photoshop is a Free online photo editor using HTML5. Edit, adjust, and add effects online in your browser without installing anything..." />
+	<meta itemprop="name" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
+	<meta itemprop="description" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Online Photoshop Free Tool" />
-	<meta name="twitter:description" content="Online Photoshop is a Free Cool online photo editor using HTML5..." />
+	<meta name="twitter:title" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
+	<meta name="twitter:description" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
 	<!-- Facebook, Pinterest -->
-	<meta property="og:title" content="Online Photoshop Free Tool" />
+	<meta property="og:title" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://freeps.org" />
-	<meta property="og:description" content="Online Photoshop is a Free Cool online photo editor using HTML5..." />
-	<meta property="og:site_name" content="Online Photoshop Free Tool" />
+	<meta property="og:description" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
+	<meta property="og:site_name" content="在线PS, 免费PS, 免费在线, 网页PS, 在线图片编辑, 在线修图, 免费抠图, 图片处理工具, Photoshop网页版, 在线图片合成, 免费设计工具" />
 
 	<script src="dist/bundle.js" async></script>
 
@@ -36,13 +36,13 @@
 
 	<div class="wrapper">
 
-		<nav aria-label="Main Menu" class="main_menu" id="main_menu"></nav>
+		<nav aria-label="主菜单" class="main_menu" id="主菜单"></nav>
 
 		<div class="submenu">
-			<a class="logo" href="#">FreePS</a>
+			<a class="logo" href="#">ps</a>
 			<div class="block attributes" id="action_attributes"></div>
 			<button class="undo_button" id="undo_button" type="button">
-				<span class="sr_only">Undo</span>
+				<span class="sr_only">撤消</span>
 			</button>
 		</div>
 
@@ -69,7 +69,7 @@
 
 		<div class="sidebar_right">
 			<div class="preview block">
-				<h2 class="trn toggle" data-target="toggle_preview">Preview</h2>
+				<h2 class="trn toggle" data-target="toggle_preview">预览</h2>
 				<div id="toggle_preview"></div>
 			</div>
 
@@ -79,27 +79,27 @@
 			</div>
 
 			<div class="block" id="info_base">
-				<h2 class="trn toggle toggle-full" data-target="toggle_info">Information</h2>
+				<h2 class="trn toggle toggle-full" data-target="toggle_info">信息</h2>
 				<div class="content" id="toggle_info"></div>
 			</div>
 
 			<div class="details block" id="details_base">
-				<h2 class="trn toggle toggle-full" data-target="toggle_details">Layer details</h2>
+				<h2 class="trn toggle toggle-full" data-target="toggle_details">图层详细信息</h2>
 				<div class="content details-content" id="toggle_details"></div>
 			</div>
 
 			<div class="layers block">
-				<h2 class="trn">Layers</h2>
+				<h2 class="trn">图层</h2>
 				<div class="content" id="layers_base"></div>
 			</div>
 		</div>
 	</div>
 	<div class="mobile_menu">
 		<button class="left_mobile_menu" id="left_mobile_menu_button" type="button">
-			<span class="sr_only">Toggle Menu</span>
+			<span class="sr_only">切换菜单</span>
 		</button>
 		<button class="right_mobile_menu" id="mobile_menu_button" type="button">
-			<span class="sr_only">Toggle Menu</span>
+			<span class="sr_only">切换菜单</span>
 		</button>
 	</div>
 	<div class="hidden" id="tmp"></div>
